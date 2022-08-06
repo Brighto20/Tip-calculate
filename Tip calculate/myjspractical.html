@@ -1,0 +1,132 @@
+<html>
+    
+    <head>
+        <title>My JS Practical</title>
+        
+    </head>
+    
+    <body>
+        
+        <h1>My JS Variables</h1>
+        
+        <div id="box1"></div>
+        
+        <script type="text/javascript">
+            
+            // VARIABLES
+            // PROFILE
+            
+            document.write("<br>");
+            
+            var firstName = "Ekezie",
+                lastName = "Bright",
+                fullName =  firstName + " " + lastName;
+            
+            document.write(fullName);
+            
+            document.write("<br><br>");
+            
+            var skills = "Graphic Designer, Web Developer, Video Editor";
+            
+            document.write(skills);
+            
+            document.write("<br><br>");
+            
+            // BUDGET
+             var book = 200 * 4,
+                 pen = 100 * 7,
+                 soap = 250 * 3,
+                 rice = 1000 * 4;
+            var totalSum = book + pen + soap + rice;
+            
+            document.write(totalSum);
+            
+            document.write("<br><br>");
+            
+            var resources = 400 * 4,
+                design = 1000 * 4,
+                sale = 200 * 6;
+            var tSum = resources + design + sale;
+            
+            document.write(tSum);
+            
+            document.write("<br><br>");
+            
+            var income = tSum - totalSum;
+            
+            document.write(income);
+            
+            document.write("<br><br>");
+            
+            var signout = "Bright";
+            signout += 2022;
+            
+            document.write(signout);
+            
+            document.write("<br><br>");
+            
+            //OUTPUT
+            console.log(58 * 4);
+            
+            window.alert("Welcome to My JS Practical Page. Am expecting your Reviews");
+            
+            //ARRAYS
+            var myBhobby = ["soccer", "gaming", "coding", "listening"];
+            
+            document.write(myBhobby[2]);
+            
+            document.write("<br><br>");
+            
+            var myMate = [
+                [ "Chiboy", "Male", "Akabo" ],
+                [ "Peter", "Male", "Enugu" ],
+                [ "Chinasa", "Female", "Lagos" ]
+            ];
+            
+            document.write(myMate[2][2]);
+            
+            document.write("<br><br>");
+            
+            var bestFood = [ "Rice", "Okro Soup", "Yam", "Fruits" ];
+            
+            for( var i = 0; i < bestFood.length; i++ ) {
+                document.write(bestFood[i]);
+                document.write("<br>");
+            }
+            
+            document.write("<br>");
+            
+            //FUNCTIONS
+            function myAge( yourAge ) {
+                return (yourAge * 3);
+            }
+            
+            var age = 9;
+            var mine = myAge( age );
+            
+            document.write( "If am twice older than my sister, i will be " + mine + " years old.");
+            
+            document.write("<br>");
+            
+            //IF/ELSE    
+            var mAge = 44;
+            
+            if(mAge < 20) {
+                document.getElementById("box1").innerHTML = "You are younger";
+                
+                document.getElementById("box1").style.color = "green";
+            } else if(mAge >= 26) {
+                document.getElementById("box1").innerHTML = "You are between 25 and 29 years";
+                
+                document.getElementById("box1").style.color = "yellow";
+            } else {
+                document.getElementById("box1").innerHTML = "You are above 30 years";
+                
+                document.getElementById("box1").style.color = "red";
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>
